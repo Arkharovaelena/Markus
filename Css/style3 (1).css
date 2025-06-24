@@ -133,9 +133,9 @@ h1 {
 
 footer {
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* добавила это */
     justify-content: space-between;
-    gap: 48px;
+    gap: 48px; /* добавила отступ между секциями */
     border-top: 1px solid #e6e6e6;
     padding-top: 48px;
 }
@@ -168,7 +168,6 @@ footer {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    
 }
 
 .footer-info h3 {
@@ -180,7 +179,6 @@ footer {
     display: flex;
     align-items: center;
     gap: 24px;
-   
 }
 
 .social-media img:hover {
