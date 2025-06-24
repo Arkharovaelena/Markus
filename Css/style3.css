@@ -85,6 +85,9 @@ h1 {
     color: #828282;
 }
 
+.product-card-about {
+    text-align: justify;
+}
 .hero-product-about {
     color: black;
     text-decoration: none;
@@ -133,7 +136,6 @@ h1 {
 
 footer {
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
     gap: 48px;
     border-top: 1px solid #e6e6e6;
@@ -167,8 +169,8 @@ footer {
 .footer-info {
     display: flex;
     justify-content: space-between;
-    flex-direction: row;
-    
+    flex-direction: column;
+        
 }
 
 .footer-info h3 {
