@@ -1,0 +1,419 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background: rgb(209, 198, 198);
+
+}
+
+a {
+    color: black;
+}
+
+header {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 60px 100px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    }
+
+.header-logo {
+    font-size: 32px;
+    text-transform: uppercase;
+    font-style: italic;
+    text-decoration: none;
+    color: rgb(168, 129, 129);
+    
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    
+    }
+
+nav a {
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+
+}
+
+button {
+    background: rgb(168, 129, 129) ;
+    color: white;
+    border: none;
+    text-transform: uppercase;
+    padding: 10px 80px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.lang {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.burger-btn {
+    background: transparent;
+    padding: 0;
+    display: none;
+
+}
+
+.hero {
+    height: 981px;
+    background: url(../Images/Task4/card4-background.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    padding-bottom: 140px;
+
+}
+
+.hero-choose {
+    padding: 24px 20px;
+    width: 235px;
+    height: 100px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+}
+
+.hero-choose:nth-child(1) {
+    background: rgb(188, 162, 162);
+}
+
+.hero-choose:nth-child(2) {
+    background: rgb(145, 119, 119);
+}
+
+.hero-choose:nth-child(3) {
+    background: rgb(188, 162, 162);
+}
+
+.hero-choose h4 {
+    line-height: 160%;
+
+}
+
+.hero-choose select {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+
+}
+
+.hero button {
+    height: 100px;
+    padding: 20px;
+}
+
+.about-us {
+    margin: 100px auto;
+    max-width: 1080px;
+    padding: 0px 30px;
+    line-height: 150%;
+
+}
+
+h2 {
+    font-size: 64px;
+    color: white;
+    font-family: "Lora", serif;
+    font-weight: 700;
+    line-height: 150%;
+    text-align: center;
+
+}
+
+.about-us p {
+    margin: 30px 0px;
+    text-indent: 25px;
+}
+
+.exclusive-offers {
+    text-align: center;
+    padding: 30px;
+
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1300px;
+    margin: 25px auto;
+    gap: 20px;
+
+}
+
+.card {
+    position: relative;
+    line-height: 1.2;
+}
+
+.card-date {
+    position: absolute;
+    top: 0;
+    left: 0px;
+    background: white;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 20px;
+}
+
+.card-date-day {
+    font-size: 35px;
+}
+
+
+.card img {
+    width: 100%;
+    height: 360px;
+    object-fit: cover;
+
+}
+
+.card-info {
+    padding: 40px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+   
+
+}
+
+.card-info h4 {
+    font-size: 20px;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.contact-us {
+    max-width: 940px;
+    margin: 100px auto;
+    padding: 30px;
+
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+
+}
+
+.contact-form-fields {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+    margin-top: 100px;
+
+}
+
+.contact-form-fields input {
+    border: 1px solid black;
+    padding: 10px 0px;
+    outline: none;
+
+}
+
+.contact-form textarea {
+    resize: none;
+    height: 100px;
+    border: 1px solid black;
+    outline: none;
+}
+
+.contact-form button {
+    width: 235px;
+    display: block;
+    margin: 0 auto;
+        
+}
+
+footer {
+    padding: 60px;
+    border-top: 1px solid black;
+}
+
+.footer-info {
+    max-width: 1160px;
+    margin: 0 auto;
+    color: white;
+}
+
+.footer-info h3 {
+    color: white;
+    font-size: 64px ;
+    text-align: center;
+    font-weight: 700;
+}
+
+
+.footer-info-links {
+    display: flex;
+    justify-content:space-between;
+    padding: 65px 0px 30px;
+
+}
+
+.footer-info-links ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: black;
+    font-family: "Lora", serif;
+}
+
+.footer-info-links a {
+    text-decoration: none;
+    font-size: 20px;
+
+
+}
+
+.footer-info-links h4 {
+    margin-bottom: 15px;
+    font-family: "Lora", serif;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.footer-social-media {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 20px 0px;
+
+}
+
+.footer-policy {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border-top: 1px solid black;
+    padding: 15px 0px 32px;
+}
+
+.footer-policy a {
+    text-decoration: none;
+    font-weight: 100;
+
+
+}
+
+.rights {
+    color: black;
+    font-weight: 100;
+    opacity: 0.5;
+}
+
+@media screen and (max-width: 992px) {
+    .burger-btn {
+        display: block;
+    }
+    nav {
+        display: none;
+    }
+    .cards {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .card img {
+        height: 60vw;
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        align-items: center;
+        justify-content: end;
+    }
+    .hero button, .hero-choose {
+        width: max(70%, 300px);
+        }
+
+    .contact-form-fields {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+        margin-top: 40px;  
+        }
+
+    .contact-form {
+        gap: 30px;
+        }
+    }
+
+@media screen and (max-width: 550px) {
+    .footer-info-links, .footer-policy, .footer-social-media, .rights {
+        display: none;
+    }
+
+    .footer-info h3 {
+        font-size: 32px;
+    }
+   
+}
+
+    @media screen and (max-width:450px) {
+        header {
+            padding: 30px;
+        }
+
+        .header-logo {
+            font-size: 20px;
+        }
+
+        h2 {
+            font-size: 20px;
+        }
+
+        .about-us p {
+            font-size: 14px;
+            margin: 14px 0px;
+        }
+
+        .card-date {
+            width: 70px;
+            height: 70px;
+            font-size: 16px;
+        }
+
+        .card-date-day {
+            font-size: 20px;
+        }
+        
+    }
+
+    
+    
+
+
+
+
