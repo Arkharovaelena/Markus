@@ -1,26 +1,14 @@
-const bigImage = document.querySelector("#big-image")
-const  img1 = document.querySelector("#img-1")
-const  img2 = document.querySelector("#img-2")
-const  img3 = document.querySelector("#img-3")
-const  img4 = document.querySelector("#img-4")
-const  img5 = document.querySelector("#img-5")
+const burgerMenuBtn = document.querySelector("#burger-menu-btn") 
+const burgerMenu = document.querySelector("#burger-menu")
+const burgerMenuClose = document.querySelector("#burger-menu-close")
 
-img1.addEventListener("click", () => {
-    bigImage.src = img1.src
+burgerMenuBtn.addEventListener("click", () => {
+    burgerMenu.style.left = "0px"
+    
+
 })
 
-img2.addEventListener("click", () => {
-    bigImage.src = img2.src
-})
+burgerMenuClose.addEventListener("click", () => {
+    burgerMenu.style.left = "-400px"
 
-img3.addEventListener("click", () => {
-    bigImage.src = img3.src
-})
-
-img4.addEventListener("click", () => {
-    bigImage.src = img4.src
-})
-
-img5.addEventListener("click", () => {
-    bigImage.src = img5.src
 })
